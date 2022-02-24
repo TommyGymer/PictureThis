@@ -1,4 +1,5 @@
-easy, bee, four, hand
-medium, pen, man, ship
-medium, craft, man, ship
-hard, bad, mint, on
+difficulty, word1, word2, word3, finalword
+easy, bee, four, hand, beforehand
+medium, pen, man, ship, penmanship
+medium, craft, man, ship, craftmanship
+hard, bad, mint, on, badminton
