@@ -7,15 +7,17 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] aStrings) {
 
-        String path = "D:\\GitHub Repositories\\PictureThis\\3player.csv";
+        String path = "C:\\Users\\jwbra\\OneDrive\\Documents\\GitHub Repositories\\PictureThis\\3player.csv";
+        //better solution would be to read file from github repos
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader(path));
+            FileReader freader = new FileReader(path);
+            BufferedReader breader = new BufferedReader(freader);
 
-            String line = "";
+            String line = null;
             ArrayList<String[]> lines = new ArrayList<String[]>();
 
-            while ((line = br.readLine()) != null) {
+            while ((line = breader.readLine()) != null) {
                 lines.add(line.split(","));
             }
 
@@ -24,7 +26,7 @@ public class Main {
 
             System.out.println(data[1][2]);
 
-            br.close();
+            breader.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
