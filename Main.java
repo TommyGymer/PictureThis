@@ -8,7 +8,6 @@ public class Main {
     public static void main(String[] aStrings) {
 
         String path = "C:\\Users\\jwbra\\OneDrive\\Documents\\GitHub Repositories\\PictureThis\\3player.csv";
-        //better solution would be to read file from github repos
 
         try {
             FileReader freader = new FileReader(path);
